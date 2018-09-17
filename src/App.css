@@ -21,17 +21,20 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(150, 150, 150, 1);
+  background-color: rgba(17,17,17, .9);
   position: fixed;
   width: 100%;
   font-size: 12px;
   font-family: "Bungee";
+  height: 70px;
+  
 }
 
 .navbar li {
   float: right;
-  margin: 20px;
-  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
 }
 
 .navbar li.navbar-name {
@@ -39,16 +42,19 @@ ul.navbar {
   float: left;
 }
 
-li a {
+li span {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: color .5s;
 }
 
-li a:hover {
-  background-color: #111;
+li span:hover {
+  color: rgb(0, 135, 214);
+  text-shadow: 3px 3px #000000;
+  cursor: pointer;
 }
 
 .header-hero {
@@ -91,6 +97,11 @@ li a:hover {
   font-family: 'Bungee';
 }
 
+#aboutme {
+  position: relative;
+  top: -100px;
+}
+
 .about-me {
   height: 50vh;
   width: 100vw;
@@ -107,6 +118,11 @@ li a:hover {
   margin: 0 auto;
 }
 
+.timeline {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #timeline-svg {
   width: 100%;
   height: 100px;
@@ -116,15 +132,18 @@ li a:hover {
 .timeline-circle {
   stroke: black;
   fill: black;
-  transition: fill 0.50s;
+  transition: all 0.50s;
 }
 
 .timeline-circle:hover {
-  fill: lightblue;
+  fill: rgb(0, 135, 214);
+  stroke: rgb(0, 135, 214);
+  cursor: pointer;
 }
 
 .timeline-circle-active {
-  fill: lightblue;
+  fill: rgb(0, 135, 214);
+  stroke: rgb(0, 135, 214);
 }
 
 .timeline-line {
@@ -138,4 +157,19 @@ li a:hover {
 }
 .timeline-description {
   font-size: 16px;
+}
+
+.contact-me {
+  height: 50vh;
+  width: 100vw;
+  font-size: 20px;
+  background-color: #111;
+  text-align: left;
+  color: white;
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Bungee";
 }

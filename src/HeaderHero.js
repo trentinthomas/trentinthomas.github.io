@@ -11,7 +11,6 @@ export default class HeaderHero extends Component {
                 <span className="header-hero-description">
                     <TypingAnimation text='Creative up and coming Software Developer'/>
                 </span>
-                <button className="portfolio-button">About Me</button>
             </div>
         );
     }
