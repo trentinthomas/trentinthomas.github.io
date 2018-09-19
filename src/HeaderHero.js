@@ -9,7 +9,7 @@ export default class HeaderHero extends Component {
             <div className="header-hero">
                 <h2 className="header-hero-title">Trentin Thomas</h2>
                 <span className="header-hero-description">
-                    <TypingAnimation text='Creative up and coming Software Developer'/>
+                    <TypingAnimation text='Creative Software Developer'/>
                 </span>
             </div>
         );

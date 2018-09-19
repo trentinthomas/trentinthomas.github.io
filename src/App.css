@@ -27,7 +27,7 @@ ul.navbar {
   font-size: 12px;
   font-family: "Bungee";
   height: 70px;
-  
+  z-index: 2;
 }
 
 .navbar li {
@@ -65,7 +65,7 @@ li span:hover {
   flex-direction: column;
   flex-flow: column;
   justify-content: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('./40037139-programming-wallpapers.jpg') center center no-repeat;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('./40037139-programming-wallpapers.jpg') center center no-repeat fixed;
   background-size: cover;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -152,15 +152,40 @@ li span:hover {
   stroke-width: 2px;
 }
 
-.timeline-img {
-  float: left;
+.timeline-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+.timeline-img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 7px 7px 50px #888;
+  border-radius: 20px;
+  border: 1px solid #888;
+  background-size: cover;
+}
+
+.timeline-img-0 {
+  background-image: url('./9941654_G.jpg');
+}
+
+.timeline-img-1 {
+  background-image: url('./gillware.jpg');
+}
+
+.timeline-img-2 {
+  background-image: url('./storagecraft.png');
+}
+
 .timeline-description {
-  font-size: 16px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .contact-me {
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   font-size: 20px;
   background-color: #111;
@@ -172,4 +197,24 @@ li span:hover {
   text-align: center;
   font-size: 25px;
   font-family: "Bungee";
+}
+
+.contact-me-section {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-flow: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.highlight {
+  color: white;
+  transition: color .5s;
+}
+
+.highlight:hover {
+  color: rgb(0, 135, 214);
+  cursor: pointer;
 }

@@ -75,7 +75,7 @@ export default class NavigationBar extends Component {
             <ul className="navbar">
                 <li className="navbar-name"><span onClick={() => this.scrollTo('trentinthomas')}>Trentin Thomas</span></li>
                 <li className="navbar-about"><span onClick={() => this.scrollTo('aboutme')}>About</span></li>
-                <li className="navbar-contact"><span onclick={() => this.scrollTo('contactme')}>Contact</span></li>
+                <li className="navbar-contact"><span onClick={() => this.scrollTo('contactme')}>Contact</span></li>
             </ul>
         );
     }

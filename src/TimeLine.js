@@ -39,24 +39,19 @@ export default class TimeLine extends Component {
                 year="2011"
                 onClick={() => this.handleActiveCircle(0)}/>
               <TimeLineCircle
-                x="30%"
+                x="65%"
                 active={activeIndex === 1}
-                year="2012"
+                year="2015"
                 onClick={() => this.handleActiveCircle(1)}/>
-              <TimeLineCircle
-                x="50%"
-                active={activeIndex === 2}
-                year="2013"
-                onClick={() => this.handleActiveCircle(2)}/>
               <TimeLineCircle
                 x="80%"
                 year="2016"
-                active={activeIndex === 3}
-                onClick={() => this.handleActiveCircle(3)}/>
+                active={activeIndex === 2}
+                onClick={() => this.handleActiveCircle(2)}/>
             </svg>
           </div>
-          <div className="container">
-            <img className="timeline-img" src={timelineInfo[activeIndex].pathToImg}/>
+          <div className="container timeline-info">
+            <div className={`timeline-img timeline-img-${activeIndex}`}/>
             <span className="timeline-description">{timelineInfo[activeIndex].text}</span>
           </div>
           
