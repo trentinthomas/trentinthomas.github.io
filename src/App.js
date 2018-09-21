@@ -7,6 +7,7 @@ import './App.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faCheckSquare, faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import ProjectsList from './ProjectsList';
 
 library.add( fab, faCheckSquare, faCoffee, faEnvelope );
 
@@ -18,6 +19,7 @@ class App extends Component {
         <NavigationBar/>
         <HeaderHero/>
         <AboutMe/>
+        <ProjectsList/>
         <Contact/>
       </div>
     );
