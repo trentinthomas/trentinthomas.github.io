@@ -1,10 +1,14 @@
 {
-  "main.css": "static/css/main.b7eadf7e.css",
-  "main.css.map": "static/css/main.b7eadf7e.css.map",
-  "main.js": "static/js/main.475e23fd.js",
-  "main.js.map": "static/js/main.475e23fd.js.map",
+  "main.css": "static/css/main.f6872bb2.css",
+  "main.css.map": "static/css/main.f6872bb2.css.map",
+  "main.js": "static/js/main.8470dfd5.js",
+  "main.js.map": "static/js/main.8470dfd5.js.map",
   "static\\media\\40037139-programming-wallpapers.jpg": "static/media/40037139-programming-wallpapers.3b77c38b.jpg",
   "static\\media\\9941654_G.jpg": "static/media/9941654_G.8d3fec8b.jpg",
   "static\\media\\gillware.jpg": "static/media/gillware.d2050819.jpg",
-  "static\\media\\storagecraft.png": "static/media/storagecraft.b255062a.png"
+  "static\\media\\questhelper.png": "static/media/questhelper.31af6d43.png",
+  "static\\media\\saviorOfRealms.jpg": "static/media/saviorOfRealms.1b1cbbb9.jpg",
+  "static\\media\\storagecraft.png": "static/media/storagecraft.b255062a.png",
+  "static\\media\\website.png": "static/media/website.2151c10f.png",
+  "static\\media\\youtubular.png": "static/media/youtubular.ba45c807.png"
 }
