@@ -12,6 +12,11 @@ body {
   font-family: 'Play', 'Bungee Shade', 'Bungee', serif;
 }
 
+h2 {
+  font-size: 25px;
+  font-family: "Bungee";
+}
+
 .App {
   text-align: center;
 }
@@ -42,7 +47,7 @@ ul.navbar {
   float: left;
 }
 
-li span {
+.navbar li span {
   display: block;
   color: white;
   text-align: center;
@@ -51,7 +56,7 @@ li span {
   transition: color .5s;
 }
 
-li span:hover {
+.navbar li span:hover {
   color: rgb(0, 135, 214);
   text-shadow: 3px 3px #000000;
   cursor: pointer;
@@ -65,10 +70,9 @@ li span:hover {
   flex-direction: column;
   flex-flow: column;
   justify-content: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url('./40037139-programming-wallpapers.jpg') center center no-repeat fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1) ),url('./40037139-programming-wallpapers.jpg') center center no-repeat fixed;
   background-size: cover;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .portfolio-button {
@@ -245,9 +249,128 @@ li span:hover {
   width: 30%;
 }
 
+.projectsv2-wrapper {
+  height: 250px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.projectv2-image {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+  border: 3px solid rgba(0,0,0,0);
+  opacity: .6;
+  transition: all .30s;
+}
+.projectv2-image:hover {
+  border: 3px solid rgb(82, 168, 218);
+  opacity: 0.8;
+}
+
+.projectv2-image-selected {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  margin: 15px;
+  border: 3px solid rgb(0, 135, 214);
+}
+
+.projectv2-description {
+  margin: 20px auto 0px auto;
+  font-size: 18px;
+  line-height: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 .project-img img {
   width: 300px;
   height: 150px;
   margin-top: 15px;
   box-shadow: 7px 7px 50px #888;
+}
+
+.projectv2-things-used {
+
+  text-align: left;
+  padding: 10px;
+}
+
+.projectv2-description-text {
+  padding: 10px;
+  text-align: left;
+  
+}
+
+.projectsv2-container {
+  margin: 40px auto 0px auto;
+  width: 60%;
+}
+
+.inverse {
+  background-color: #111;
+  color: white;
+}
+
+.projectsv2  {
+  padding-top: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.header-hero-learn-more-hidden {
+  opacity: 0;
+  transition: all 2.5s;
+}
+.header-hero-learn-more {
+  opacity: 1;
+  transition: opacity 2.5s;
+
+}
+
+.skills-list {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+  font-size: 20px;
+}
+
+.skills {
+  margin-bottom: 40px;
+}
+
+hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0,0,0,.5);
+}
+
+hr.inverse {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 17px 12px -12px rgba(255,255,255,.5);
 }

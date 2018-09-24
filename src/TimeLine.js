@@ -28,7 +28,6 @@ export default class TimeLine extends Component {
     let {timelineInfo} = this.props;
 
     return (
-      <Fade bottom cascade>
         <div>
           <div className="timeline">
             <svg id="timeline-svg" preserveAspectRatio="xMidYMid meet">
@@ -56,7 +55,6 @@ export default class TimeLine extends Component {
           </div>
           
         </div>
-      </Fade>
     );
   }
 
