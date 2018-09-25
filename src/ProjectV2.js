@@ -7,6 +7,7 @@ export default class ProjectV2 extends Component {
       <img
         className={this.props.selected ? "projectv2-image-selected" : "projectv2-image"}
         onClick={this.props.onClick} 
+        alt=""
         src={this.props.image}/>
     );
   }

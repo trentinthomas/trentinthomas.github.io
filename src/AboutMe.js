@@ -28,8 +28,8 @@ export default class AboutMe extends Component {
 
     render() {
         return (
-            <div className="about-me">
-                <a id="aboutme"/><h2>About Me</h2>
+            <div className="about-me" id="aboutme">
+                <h2>About Me</h2>
                 <TimeLine
                     timelineInfo={timelineInfo}/>
             </div>

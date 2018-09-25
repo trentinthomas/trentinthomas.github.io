@@ -9,11 +9,15 @@ export default class Skills extends Component {
     return (
       <div className="skills container">
         <h2>Skills</h2>
-        <div className="skills-list">
-          <Fade cascade>
-            {skills.map(s => <span>{s}</span>)}
-          </Fade>  
-        </div>
+          <div className="skills-list">
+            {skills.map((s, index) => {
+              return (
+                <Fade top duration={2000} delay={index * 150}>
+                  <span>{s}</span>
+                </Fade>
+              ); 
+            })}
+          </div>
       </div>
       
     );

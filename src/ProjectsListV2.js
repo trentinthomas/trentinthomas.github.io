@@ -7,7 +7,7 @@ import saviorOfRealmsjpg from './saviorOfRealms.jpg';
 import questhelperpng from './questhelper.png';
 import youtubularPng from './youtubular.png';
 
-const websiteText = "This website. I created it purely out of convenience to see all my projects in one place. Written in React.js and all CSS written by me. Using Icons from FontAwesomeIcon library.";
+const websiteText = "I created this website purely out of convenience to see all my projects in one place. Written in React.js and all CSS written by me. Using Icons from FontAwesomeIcon library.";
 const saviorOfRealmsText = `This is a game that I was working on with one other developer. This was purely written in Java, using a library called 
                             Slick2D. Although the game was never finished, it still used some cool algorithms for open world generation and
                             graphics. We used a website to generate sprites for the 3 seperate characters in the game and animated them in game.`;
@@ -18,12 +18,11 @@ const youtubularText = `Project I made to convert youtube videos into mp3 files.
                         that can run on Windows. Includes the UI from Antd design CSS library.`;
 
 const projects = [
-  {image: websitePng, text: websiteText, name:"This Website", thingsUsed: ['JavaScript/React', 'JSX', 'npm']},
-  {image: youtubularPng, text: youtubularText, name:"YouTubular", thingsUsed: ['Electron', 'JavaScript/React', 'Antd Design', 'ytdl-core']},
-  {image: saviorOfRealmsjpg, text: saviorOfRealmsText, name:"Savior of Realms", thingsUsed: ['Java', 'Slick2D', 'Maven']},
-  {image: questhelperpng, text: questhelpertext, name:"OSRS Quest Filter", thingsUsed: ['Java', 'JavaFX', 'Maven']},
+  {image: websitePng, text: websiteText, name:"This Website", thingsUsed: ['JavaScript/React', 'JSX', 'npm'], sourceURL: 'https://github.com/trentinthomas/trentinthomas.github.io'},
+  {image: youtubularPng, text: youtubularText, name:"YouTubular", thingsUsed: ['Electron', 'JavaScript/React', 'Antd Design', 'ytdl-core'], sourceURL: 'https://github.com/trentinthomas/youtubular'},
+  {image: saviorOfRealmsjpg, text: saviorOfRealmsText, name:"Savior of Realms", thingsUsed: ['Java', 'Slick2D', 'Maven'], sourceURL: 'https://github.com/trentinthomas/saviorofrealms'},
+  {image: questhelperpng, text: questhelpertext, name:"OSRS Quest Filter", thingsUsed: ['Java', 'JavaFX', 'Maven'], sourceURL: 'https://github.com/trentinthomas/rsquestfilter'},
 ];
-const descriptions = [websiteText, saviorOfRealmsText, questhelpertext, youtubularText];
 
 export default class ProjectsList extends Component {
 
@@ -64,7 +63,6 @@ export default class ProjectsList extends Component {
           {this.generateProjects()}
         </div>
         <div className="projectsv2-container">
-          <h3>{projects[this.state.selectedProject].name}</h3>
           <div className="projectv2-description">
             <div className="projectv2-things-used">
               
@@ -76,8 +74,9 @@ export default class ProjectsList extends Component {
               </ul>
             </div>
             <div className="projectv2-description-text">
-            <h3>Description:</h3>
-            {projects[this.state.selectedProject].text}
+              <h3 className="projectv2-description-title">{projects[this.state.selectedProject].name}</h3>
+              <p>{projects[this.state.selectedProject].text}</p>
+              <a className="git-link" href={projects[this.state.selectedProject].sourceURL} target="_blank">View Source Code &gt;</a>
             </div>
           </div>
         </div>

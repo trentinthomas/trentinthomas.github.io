@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 
 export default class TimeLineCircle extends Component {
 
-  constructor(props)
-  {
-    super(props);
-  }
-
   render() {
 
     let circleRadius = 8;

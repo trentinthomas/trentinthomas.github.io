@@ -57,9 +57,9 @@
 					callback();
 				}
 			} else {
-				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY, settings.duration);
+				yScroll = settings.easing.outQuint(0, elapsed, offset, targetY, settings.duration) - 70; //Need this -70 to offset the navbar.
 				window.scrollTo(0, yScroll);
-				timer = setTimeout(step, 10);     
+				timer = setTimeout(step, 10);
 			}
 		}
 

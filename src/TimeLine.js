@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import TimeLineCircle from './TimeLineCircle';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal/Fade';
 
 export default class TimeLine extends Component {
 
