@@ -22,9 +22,9 @@ export default class HeaderHero extends Component {
         return (
             <div className="header-hero" id="trentinthomas">
                 <h2 className="header-hero-title">Trentin Thomas</h2>
-                <span className="header-hero-description">
+                <p className="header-hero-description">
                     <TypingAnimation text='Creative. Innovative. Just me.' speed={150}/>
-                </span>
+                </p>
                 <span className={`header-hero-learn-more${!this.state.loaded ? '-hidden' : ''}`} onClick={() => scrollTo('aboutme')}>Learn more</span>
             </div>
         );

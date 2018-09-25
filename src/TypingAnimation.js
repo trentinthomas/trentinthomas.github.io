@@ -44,7 +44,7 @@ export default class TypingAnimation extends Component {
         const {text, blinking} = this.state;
 
         return (
-            <span>{text}{blinking ? <span>&nbsp;</span> : "|"}</span>
+            <span>{text}{blinking ? "" : "|"}</span>
         );
     }
 }
